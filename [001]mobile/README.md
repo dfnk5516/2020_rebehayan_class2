@@ -1,7 +1,7 @@
 # 20200822 모바일 반응형 웹페이지
 
 ## 강의 자료
-https://xd.adobe.com/view/a9e71c9e-0df1-42f7-a93a-55e324b5758b-fcb4/
+https://xd.adobe.com/view/a9e71c9e-0df1-42f7-a93a-55e324b5758b-fcb4/ <br>
 material.io/resources/devices
 
 ## 강의 내용 필기
