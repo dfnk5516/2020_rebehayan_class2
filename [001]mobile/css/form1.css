@@ -1,0 +1,102 @@
+/* Select box 스타일 초기화 */
+#form1 > select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+/* IE 에서 Select box 화살표 제거 */ 
+#form1 > select::-ms-expand { display: none; }
+/* hidden */
+.hidden {
+  position : absolute;
+  top : -999px;
+  left : -999px;
+}
+.float-left {
+  float : left;
+}
+.float-clear::after {
+  content : '';
+  clear : both;
+  display : block;
+}
+
+html {
+  font-size: 20px;
+}
+body {
+  width : 100vw;
+  height : 100vh;
+  box-sizing: border-box;
+  background: #FFFFFF;
+  font-size: 1rem;
+  padding : 1.58rem 1.31rem 0 1.28rem;
+}
+.form1-input, #form1 > select {
+  border-radius : 10px;
+  border : #E3E3E3 solid 1px;
+  background : #F6F6F6;
+  height : 1.92rem;
+  padding : 0 0 0 .63rem;
+  font-size : .8rem;
+  color : #202020;
+}
+
+h1 {
+  font : bold .75rem 'Noto Sans KR';
+}
+h1:first-of-type {
+  margin-bottom : 0.33rem;
+}
+#form1 > div:first-of-type {
+  margin-bottom : .4rem;
+  width : 100%;
+}
+#form1 > div:first-of-type > input[name="userId"] {
+  width : calc(45% - 1.52rem);
+}
+#form1 > div:first-of-type > p{
+  display : flex;
+  justify-content : center;
+  align-items : center;
+  width : 1.52rem;
+  height : 1.92rem;
+  font-size : .8rem;
+}
+#form1 > div:first-of-type > input[name="userEmailDomain"] {
+  width : calc(55% - 1.52rem);
+}
+
+[name="userEmailDomain"]::-webkit-input-placeholder {
+  color: #DDDDDD;
+}
+[name="userEmailDomain"]::-ms-input-placeholder {
+  color: #DDDDDD;
+}
+[name="userEmailDomain"]::-moz-placeholder {
+  color: #DDDDDD;
+}
+
+#form1 > select {
+  margin-bottom : 1.23rem;
+  width : 100%;
+}
+
+[name="title"]::-webkit-input-placeholder {
+  color: #666666;
+}
+[name="title"]::-ms-input-placeholder {
+  color: #666666;
+}
+[name="title"]::-moz-placeholder {
+  color: #666666;
+}
+
+#form1 > h1:last-of-type {
+  margin-bottom : 0.35rem;
+}
+
+#form1 > input[name="title"] {
+  box-sizing: border-box;
+  width : 100%;
+}

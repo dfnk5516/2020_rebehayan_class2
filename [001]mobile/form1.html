@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form1</title>
+  <link rel="stylesheet" href="css/default.css">
+  <link rel="stylesheet" href="css/form1.css">
+  <script src="js/form1.js" defer></script>
+</head>
+<body>
+  <form id="form1" action="./form1.html" onsubmit="return form1Submit()">
+    <h1>이메일</h1>
+    <div class="float-clear">
+      <input type="text" class="float-left form1-input" name="userId" value="rebehayan">
+      <p class="float-left">@</p>
+      <input type="text" class="float-left form1-input" name="userEmailDomain" placeholder="naver.com">
+    </div>
+    <select class="form-input">
+      <option>I will write myself</option>
+      <option>naver.com</option>
+      <option>nate.com</option>
+      <option>gmail.com</option>
+      <option>daum.net</option>
+    </select>
+    <h1>제목</h1>
+    <input type="text" class="form1-input" name="title" placeholder="제목 입력">
+    <input type="submit" class="hidden">
+  </form>
+</body>
+</html>
