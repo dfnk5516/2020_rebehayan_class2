@@ -2,7 +2,7 @@
 
 ## 강의 자료
 https://xd.adobe.com/view/a9e71c9e-0df1-42f7-a93a-55e324b5758b-fcb4/ <br>
-material.io/resources/devices
+http://material.io/resources/devices
 
 ## 강의 내용 필기
 ```txt
