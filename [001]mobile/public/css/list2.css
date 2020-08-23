@@ -1,0 +1,81 @@
+html {
+  font-size: 20px;
+}
+
+body {
+  position : relative;
+  width : 100vw;
+  box-sizing: border-box;
+  background: #F0F0F0;
+  font-size: 1rem;
+}
+
+section {
+  overflow-x : hidden;
+  position : absolute;
+  left : 0;
+  top : 1.06rem;
+  margin-bottom : 1.06rem;
+  height :500px;
+}
+section ul {
+  display : flex;
+  flex-wrap : wrap;
+  width : calc(100vw + 2px);
+}
+section ul li {
+  width : 50vw;
+  height : 2.03rem;
+  border-right : 1px solid #E1E1E2;
+  border-bottom : 1px solid #E1E1E2;
+}
+section ul li a {
+  display : block;
+  position : relative;
+  box-sizing : border-box;
+  width : inherit;
+  height : inherit;
+  padding : .61rem .48rem  .64rem .73rem;
+  background :#FFFFFF;
+  font : .53rem 'Noto Sans KR';
+  color : #000000;
+}
+section ul li a:hover {
+  cursor : pointer;
+  background : #222;
+  color : #FFF;
+}
+section ul li a p.newEvent{
+  display : inline-block;
+  padding-right : .55rem;
+  background : url(../images/ico_new.png) no-repeat right center / .48rem .48rem;
+  position : relative;
+}
+section ul li a p.newEvent::after{
+  content : '';
+  display : block;
+  position : absolute;
+  top: calc(50% - .24rem);
+  right : 0;
+  z-index : 1;
+  width : .48rem;
+  height : .48rem;
+}
+section ul li a p.newEvent::after {
+  animation : btn-default 1.2s linear alternate infinite;
+}
+section ul li a:hover p.newEvent::after {
+  animation : btn-hover 1.2s linear alternate infinite;
+}
+
+@keyframes btn-default {
+  100% {
+    background : #FFF;
+  }
+}
+@keyframes btn-hover {
+  100% {
+    background : #222;
+  }
+}
+

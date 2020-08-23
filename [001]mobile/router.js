@@ -28,6 +28,9 @@ router.get('/tab1', (req,res,next)=>{
 router.get('/tab2', (req,res,next)=>{
   res.render('tab2.html');
 })
+router.get('/form1', (req,res,next)=>{
+  res.render('form1.html');
+})
 router.post('/form1', (req,res,next)=>{
   console.log(req.body);
   res.render('form1.html');
