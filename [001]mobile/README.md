@@ -1,5 +1,6 @@
 # 20200822 모바일 반응형 웹페이지
 
+<<<<<<< HEAD
 ## 모바일 컨텐츠 예제
 https://xd.adobe.com/view/a9e71c9e-0df1-42f7-a93a-55e324b5758b-fcb4/
 
