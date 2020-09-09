@@ -2,22 +2,22 @@
 @font-face {
   font-family:font_ns;
   font-weight:normal;
-  src:local(※), url(../font/NotoSansKR-Regular.woff) format('woff');
+  src:url(../font/NotoSansKR-Regular.woff) format('woff');
 }
 @font-face {
   font-family:font_ns;
   font-weight:300;
-  src:local(※), url(../font/NotoSansKR-Medium.woff) format('woff');
+  src:url(../font/NotoSansKR-Medium.woff) format('woff');
 }
 @font-face {
   font-family:font_ns;
   font-weight:bold;
-  src:local(※), url(../font/NotoSansKR-Bold.woff) format('woff');
+  src:url(../font/NotoSansKR-Bold.woff) format('woff');
 }
 @font-face {
   font-family:font_sw;
   font-weight:normal;
-  src:local(※), url(../font/Subway-SixInch.woff) format('woff');
+  src:url(../font/Subway-SixInch.woff) format('woff');
 }
 html {
   font-size: 20px;
@@ -69,7 +69,7 @@ main {
   top : -.78rem;
   left : 0;
   height : 10.75rem;
-  border-radius : 1.5rem 0 1.5rem 0;
+  border-radius : 1.5rem 0;
   background : #FFF;
 }
 .section_menu > .menu_wrapper .menu {
@@ -332,7 +332,6 @@ footer .copyright {
   }
 }
 
-
 .sidebar_wrapper::-webkit-scrollbar {
   display: none; /* Chrome, Safari, Opera*/
 }
@@ -403,6 +402,126 @@ footer .copyright {
   border-color : #fff;
   background : #fff;
   color : #333;
+}
+.sidebar_wrapper > .menu_wrapper {
+  position : relative;
+  padding : 0 .75rem;
+  top : -2.25rem;
+  left : 0;
+}
+.sidebar_wrapper > .menu_wrapper > .quick_menus {
+  box-sizing : border-box;
+  margin-bottom : .75rem;
+  padding : 1.25rem 1rem;
+  border-radius : 1.5rem 0;
+  background : #FFF;
+  height : 9.9rem;
+}
+.sidebar_wrapper > .menu_wrapper > .quick_menus > ul {
+  display : flex;
+  justify-content: center;
+  align-content : space-between;
+  flex-wrap : wrap;
+  height : 100%;
+}
+.sidebar_wrapper > .menu_wrapper > .quick_menus > ul > li > a {
+  display : inline-block;
+  width : calc((100vw - 5rem) / 3);
+  padding-top : 1.95rem;
+  text-align : center;
+  font-weight : 700;
+  font-size : .6rem;
+  font-family : 'font_ns', 'sans-serif';
+  color : #292929;
+  line-height : .96rem;
+}
+
+.sidebar_wrapper > .menu_wrapper > .sub_menus > ul.parent_menu > li {
+  margin-bottom : .1rem;
+}
+.sidebar_wrapper > .menu_wrapper > .sub_menus > ul.parent_menu > li:last-child {
+  margin-bottom : 0rem;
+}
+.sidebar_wrapper > .menu_wrapper > .sub_menus > ul.parent_menu > li:first-child > span {
+  border-radius : 1.5rem 0 0 0;
+}
+.sidebar_wrapper > .menu_wrapper > .sub_menus > ul.parent_menu > li:last-child > span {
+  border-radius : 0 0 1.5rem 0;
+  transition : .3s;
+}
+.sidebar_wrapper > .menu_wrapper > .sub_menus > ul.parent_menu > li.active:last-child > span {
+  border-radius : 0;
+}
+
+.sidebar_wrapper > .menu_wrapper > .sub_menus > ul.parent_menu > li > span {
+  display : block;
+  position : relative;
+  box-sizing : border-box;
+  padding : 0 1rem 0 3rem;
+  border-style : solid;
+  border-color : #fff;
+  height : 3rem;
+  font-weight : bold;
+  font-size : .8rem;
+  font-family : 'font_ns', 'sans-serif';
+  color : #292929;
+  line-height : 3.000em;
+}
+.sidebar_wrapper > .menu_wrapper > .sub_menus > ul.parent_menu > li.active > span::before {
+  transform : rotate(135deg);
+  background : #009223;
+}
+.sidebar_wrapper > .menu_wrapper > .sub_menus > ul.parent_menu > li.active > span::after {
+  transform : rotate(-135deg);
+  background : #009223;
+}
+.sidebar_wrapper > .menu_wrapper > .sub_menus > ul.parent_menu > li > span::before {
+  content : '';
+  position : absolute;
+  top : 25px;
+  right : 25px;
+  width : 2px;
+  height : 11px;
+  transform : rotate(45deg);
+  background : #bbb;
+  transition : .3s;
+}
+.sidebar_wrapper > .menu_wrapper > .sub_menus > ul.parent_menu > li > span::after {
+  content : '';
+  position : absolute;
+  top : 25px;
+  right : 32px;
+  width : 2px;
+  height : 11px;
+  transform : rotate(-45deg);
+  background : #bbb;
+  transition : .3s;
+}
+.sidebar_wrapper > .menu_wrapper > .sub_menus > ul.parent_menu > li.active:last-child > ul.children {
+  border-radius : 0 0 1.5rem 0;
+}
+.sidebar_wrapper > .menu_wrapper > .sub_menus > ul.parent_menu > li.active > ul.children {
+  padding : 1.25rem 0;
+}
+.sidebar_wrapper > .menu_wrapper > .sub_menus > ul.parent_menu > li > ul.children {
+  overflow : hidden;
+  background : #fcfcfc;
+  padding : 0;
+  transition : .3s;
+}
+.sidebar_wrapper > .menu_wrapper > .sub_menus > ul.parent_menu > li.active > ul.children > li > a {
+  height : 1.6rem;
+  color : #292929;
+}
+.sidebar_wrapper > .menu_wrapper > .sub_menus > ul.parent_menu > li > ul.children > li > a {
+  display : block;
+  padding-left : 3rem;
+  height : 0;
+  font-size : .7rem;
+  font-family : 'font_ns', 'sans-serif';
+  color : #fcfcfc;
+  line-height : 2em;
+  transition : .3s;
 }
 
 
