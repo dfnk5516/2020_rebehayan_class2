@@ -419,8 +419,7 @@ footer .copyright {
 }
 .sidebar_wrapper > .menu_wrapper > .quick_menus > ul {
   display : flex;
-  justify-content: center;
-  align-items : center;
+  align-content : space-between;
   flex-wrap : wrap;
   height : 100%;
 }
