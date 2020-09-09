@@ -4,7 +4,7 @@
   "description": "mobile page lecture",
   "main": "app.js",
   "scripts": {
-    "start": "npx nodemon -e js,html app"
+    "start": "npx nodemon -e js,html,css app"
   },
   "author": "",
   "license": "ISC",
